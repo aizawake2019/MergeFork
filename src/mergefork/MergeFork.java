@@ -19,7 +19,7 @@ import java.util.Comparator;
 public class MergeFork extends javax.swing.JFrame {
     
     private final String[] contributorArray = new String[] {
-        "Ken Weber",
+        "Keigo Aizawa",
         "CSIS Student",
     };
     
@@ -149,7 +149,13 @@ public class MergeFork extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new MergeFork().setVisible(true));
+//        java.awt.EventQueue.invokeLater(() -> new MergeFork().setVisible(true));
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new MergeFork().setVisible(true);
+            }
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
